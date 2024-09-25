@@ -28,6 +28,11 @@ dependencies {
 	implementation 'org.springframework.ai:spring-ai-ollama-spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.32'
+	implementation group: 'org.springframework', name: 'spring-webflux', version: '6.1.8'
+	implementation group: 'com.microsoft.cognitiveservices.speech', name: 'client-sdk', version: "1.40.0", ext: "jar"
+	implementation 'dev.langchain4j:langchain4j-open-ai:0.34.0'
+	implementation 'dev.langchain4j:langchain4j:0.34.0'
 }
 
 dependencyManagement {
